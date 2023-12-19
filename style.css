@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  //background-color: black;
+  color: white;
+  text-align: center;
+  background: url('https://a-a-ah-ru.s3.amazonaws.com/uploads/items/158260/329849/large_1573230097.jpg') no-repeat;
+  background-size: 100%;
+}
+
+header {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4em;
+}
+.interactive-button {
+  margin: 20px;
+}
+
+button {
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.interactive-form {
+  position: fixed;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  color: rgb(13, 13, 13);
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form label, form input {
+  display: block;
+  margin: 10px auto;
+}
+
+a img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+footer {
+  padding: 10px;
+  color: black;
+  position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+  font-size: large;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  button {
+    padding: 5px;
+  }
+  form label, form input {
+    margin: 5px auto;
+  }
+  a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.video-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: min(60vw, 560px);
+  height: calc(9 / 16 * min(60vw, 560px));
+  z-index: 1;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+}
+
+.band-image {
+  position: fixed;
+  width: 400px;
+  height: 150px;
+  left: 40px;
+}
+
+#naiv {
+  top: 300px;
+  left: 20px;
+}
+
+#tarakany {
+  bottom: 100px;
+  right: 20px;
+}
+
+#7000 {
+  bottom: 200px;
+  left: 100px;
+}
+
+@-moz-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}}  
+@-webkit-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}}  
+@-ms-keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}}  
+@keyframes blink {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}}  
+img {
+border:1px solid #646469;
+  box-shadow: 1px 1px 6px rgba(109, 109, 109, 0.74), 1px 2px 30px -15px rgba(49, 49, 49, 0.92);
+-moz-transition:all 2s ease-in-out;
+-webkit-transition:all 2s ease-in-out;
+-o-transition:all 2s ease-in-out;
+-ms-transition:all 2s ease-in-out;
+transition:all 2s ease-in-out;  
+-moz-animation:blink normal 7s infinite ease-in-out;  
+-webkit-animation:blink normal 7s infinite ease-in-out;  
+-ms-animation:blink normal 7s infinite ease-in-out;  
+animation:blink normal 7s infinite ease-in-out;  
+}
